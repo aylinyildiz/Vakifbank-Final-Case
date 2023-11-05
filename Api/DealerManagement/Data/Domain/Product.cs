@@ -16,8 +16,10 @@ namespace Data.Domain
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
-    public class ProductConfigruration : IEntityTypeConfiguration<Product>
+    public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
@@ -30,6 +32,8 @@ namespace Data.Domain
             builder.Property(x => x.StockQuantity).IsRequired(true);
             builder.Property(x => x.Price).IsRequired(true);
             builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
+
+            builder.HasOne(x => x.User).WithMany(x => x.Products).HasForeignKey(x => x.UserId).IsRequired(true);
         }
     }
 }

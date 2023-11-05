@@ -44,6 +44,10 @@ namespace Operation.Mapper
             CreateMap<Order, OrderResponse>()
                 .ForMember(dest => dest.StatusName, opt => opt.MapFrom(src => src.Status.Name))
                 .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.User.Id));
+
+            CreateMap<ProductRequest, Product>();
+            CreateMap<Product, ProductResponse>()
+                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.User.Id));
         }
     }
 }

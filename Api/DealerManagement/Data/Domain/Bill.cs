@@ -22,7 +22,7 @@ namespace Data.Domain
         public Address Address { get; set; }
     }
 
-    public class BillConfigruration : IEntityTypeConfiguration<Bill>
+    public class BillConfiguration : IEntityTypeConfiguration<Bill>
     {
         public void Configure(EntityTypeBuilder<Bill> builder)
         {

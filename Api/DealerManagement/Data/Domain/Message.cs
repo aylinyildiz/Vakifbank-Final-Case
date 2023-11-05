@@ -17,7 +17,7 @@ namespace Data.Domain
         public User ReceiverUser { get; set; }
     }
 
-    public class MessageConfigruration : IEntityTypeConfiguration<Message>
+    public class MessageConfiguration : IEntityTypeConfiguration<Message>
     {
         public void Configure(EntityTypeBuilder<Message> builder)
         {

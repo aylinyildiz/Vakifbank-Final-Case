@@ -26,11 +26,13 @@ namespace Data.Domain
         public List<Order> Orders { get; set; }
         public List<Message> Messages1 { get; set; }
         public List<Message> Messages2 { get; set; }
+        public List<Product> Products { get; set; }
+        
         public virtual List<Address> Addresses { get; set; }
         public virtual List<Account> Accounts { get; set; }
     }
 
-    public class UserConfigruration : IEntityTypeConfiguration<User>
+    public class UserConfiguration : IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {

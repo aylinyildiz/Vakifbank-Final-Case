@@ -25,7 +25,7 @@ namespace Data.Domain
         public string TransactionCode { get; set; }
     }
 
-    public class AccountTransactionConfigruration : IEntityTypeConfiguration<AccountTransaction>
+    public class AccountTransactionConfiguration : IEntityTypeConfiguration<AccountTransaction>
     {
         public void Configure(EntityTypeBuilder<AccountTransaction> builder)
         {

@@ -19,7 +19,7 @@ namespace Data.Domain
         public List<User> Users { get; set; }
     }
 
-    public class RoleConfigruration : IEntityTypeConfiguration<Role>
+    public class RoleConfiguration : IEntityTypeConfiguration<Role>
     {
         public void Configure(EntityTypeBuilder<Role> builder)
         {

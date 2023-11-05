@@ -25,7 +25,7 @@ namespace Data.Domain
     }
 
 
-    public class CardConfigruration : IEntityTypeConfiguration<Card>
+    public class CardConfiguration : IEntityTypeConfiguration<Card>
     {
         public void Configure(EntityTypeBuilder<Card> builder)
         {

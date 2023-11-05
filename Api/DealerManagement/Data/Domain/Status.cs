@@ -14,7 +14,7 @@ namespace Data.Domain
         public Order Order { get; set; }
     }
 
-    public class StatusConfigruration : IEntityTypeConfiguration<Status>
+    public class StatusConfiguration : IEntityTypeConfiguration<Status>
     {
         public void Configure(EntityTypeBuilder<Status> builder)
         {

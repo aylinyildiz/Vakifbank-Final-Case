@@ -20,7 +20,7 @@ namespace Data.Domain
         public int ProductStockReportId { get; set; } ///?
     }
 
-    public class ReportConfigruration : IEntityTypeConfiguration<Report>
+    public class ReportConfiguration : IEntityTypeConfiguration<Report>
     {
         public void Configure(EntityTypeBuilder<Report> builder)
         {

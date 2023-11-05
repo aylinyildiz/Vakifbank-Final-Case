@@ -16,19 +16,19 @@ namespace Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new AccountTransactionConfigruration());
-            modelBuilder.ApplyConfiguration(new AccountConfigruration());
-            modelBuilder.ApplyConfiguration(new AddressConfigruration());
-            modelBuilder.ApplyConfiguration(new BillConfigruration());
-            modelBuilder.ApplyConfiguration(new CardConfigruration());
-            modelBuilder.ApplyConfiguration(new EftTransactionConfigruration());
-            modelBuilder.ApplyConfiguration(new MessageConfigruration());
-            modelBuilder.ApplyConfiguration(new OrderConfigruration());
-            modelBuilder.ApplyConfiguration(new ProductConfigruration());
-            modelBuilder.ApplyConfiguration(new ReportConfigruration());
-            modelBuilder.ApplyConfiguration(new RoleConfigruration());
-            modelBuilder.ApplyConfiguration(new StatusConfigruration());
-            modelBuilder.ApplyConfiguration(new UserConfigruration());
+            modelBuilder.ApplyConfiguration(new AccountTransactionConfiguration());
+            modelBuilder.ApplyConfiguration(new AccountConfiguration());
+            modelBuilder.ApplyConfiguration(new AddressConfiguration());
+            modelBuilder.ApplyConfiguration(new BillConfiguration());
+            modelBuilder.ApplyConfiguration(new CardConfiguration());
+            modelBuilder.ApplyConfiguration(new EftTransactionConfiguration());
+            modelBuilder.ApplyConfiguration(new MessageConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new ReportConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfiguration(new StatusConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

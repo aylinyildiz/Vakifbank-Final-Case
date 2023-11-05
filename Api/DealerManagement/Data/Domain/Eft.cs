@@ -29,7 +29,7 @@ namespace Data.Domain
     }
 
 
-    public class EftTransactionConfigruration : IEntityTypeConfiguration<Eft>
+    public class EftTransactionConfiguration : IEntityTypeConfiguration<Eft>
     {
         public void Configure(EntityTypeBuilder<Eft> builder)
         {

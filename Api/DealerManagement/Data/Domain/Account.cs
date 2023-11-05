@@ -33,7 +33,7 @@ namespace Data.Domain
         public virtual Card Card { get; set; }
     }
 
-    public class AccountConfigruration : IEntityTypeConfiguration<Account>
+    public class AccountConfiguration : IEntityTypeConfiguration<Account>
     {
         public void Configure(EntityTypeBuilder<Account> builder)
         {

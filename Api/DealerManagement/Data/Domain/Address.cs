@@ -23,7 +23,7 @@ namespace Data.Domain
         public string PostalCode { get; set; }
     }
 
-    public class AddressConfigruration : IEntityTypeConfiguration<Address>
+    public class AddressConfiguration : IEntityTypeConfiguration<Address>
     {
         public void Configure(EntityTypeBuilder<Address> builder)
         {
