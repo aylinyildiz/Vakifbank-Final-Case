@@ -220,3 +220,265 @@ QueryString:
 StatusCode: 200 
 Response Body: {"success":true,"message":"Success","response":[{"userNumber":0,"email":"test@mail.com","firstName":"aylin","lastName":"yildiz","roleId":1,"addresses":[],"accounts":[]}]}
 2023-11-05 20:02:27.436 [INF] -------------Request-End------------
+2023-11-05 20:57:27.394 [INF] App server is starting.
+2023-11-05 20:57:48.282 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:57:48.283 [INF] HeartBeat
+2023-11-05 20:57:48.284 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:57:49.747 [INF] -------------Request-Begin------------
+2023-11-05 20:57:49.747 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "oznur@mail.com",
+  "password": "12345"
+}
+2023-11-05 20:57:49.748 [INF] 
+
+2023-11-05 20:57:49.748 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-11-05 20:57:49.748 [INF] -------------Request-End------------
+2023-11-05 20:58:22.594 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:58:22.594 [INF] HeartBeat
+2023-11-05 20:58:22.594 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:58:22.805 [INF] -------------Request-Begin------------
+2023-11-05 20:58:22.805 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "oznur@mail.com",
+  "password": "12345"
+}
+2023-11-05 20:58:22.805 [INF] 
+
+2023-11-05 20:58:22.805 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T21:03:22.797162+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJvem51ckBtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkRlYWxlciIsIkZ1bGxOYW1lIjoib3pudXIgeWlsZGl6IiwiZXhwIjoxNjk5MjA3NDAyLCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.zgPCX17PNRjdIyfUQENsNhYljGRhpSJAEETlfqm0KdY","email":"oznur@mail.com","userId":0}}
+2023-11-05 20:58:22.805 [INF] -------------Request-End------------
+2023-11-05 20:59:35.719 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:59:35.719 [INF] HeartBeat
+2023-11-05 20:59:35.720 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:59:36.029 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:00:10.513 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:00:10.513 [INF] HeartBeat
+2023-11-05 21:00:10.513 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:00:22.990 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:00:36.655 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:00:36.655 [INF] HeartBeat
+2023-11-05 21:00:36.655 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:01:14.216 [INF] App server is starting.
+2023-11-05 21:01:37.275 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:01:37.276 [INF] HeartBeat
+2023-11-05 21:01:37.277 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:01:38.740 [INF] -------------Request-Begin------------
+2023-11-05 21:01:38.740 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "oznur@mail.com",
+  "password": "12345"
+}
+2023-11-05 21:01:38.740 [INF] 
+
+2023-11-05 21:01:38.740 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T21:06:38.7253753+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJvem51ckBtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkRlYWxlciIsIkZ1bGxOYW1lIjoib3pudXIgeWlsZGl6IiwiZXhwIjoxNjk5MjA3NTk4LCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.v5JTQyMXWF0wrV7_1SjBb0lprcDHxD7-lmyea9hvtEE","email":"oznur@mail.com","userId":0}}
+2023-11-05 21:01:38.740 [INF] -------------Request-End------------
+2023-11-05 21:01:55.948 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:01:55.948 [INF] HeartBeat
+2023-11-05 21:01:55.948 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:02:07.095 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:02:38.444 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:02:38.444 [INF] HeartBeat
+2023-11-05 21:02:38.444 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:02:45.422 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:06:21.411 [INF] App server is starting.
+2023-11-05 21:06:39.291 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:06:39.292 [INF] HeartBeat
+2023-11-05 21:06:39.292 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:06:40.816 [INF] -------------Request-Begin------------
+2023-11-05 21:06:40.816 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "oznur@mail.com",
+  "password": "12345"
+}
+2023-11-05 21:06:40.816 [INF] 
+
+2023-11-05 21:06:40.816 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T21:11:40.8004478+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJvem51ckBtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkRlYWxlciIsIkZ1bGxOYW1lIjoib3pudXIgeWlsZGl6IiwiZXhwIjoxNjk5MjA3OTAwLCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.MXYFV4DkQGF9yonGG-PfcBoSEBNN--_Rgz14Wfjgcuw","email":"oznur@mail.com","userId":0}}
+2023-11-05 21:06:40.816 [INF] -------------Request-End------------
+2023-11-05 21:06:52.514 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:06:52.514 [INF] HeartBeat
+2023-11-05 21:06:52.514 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:06:54.151 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:07:10.008 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:07:10.008 [INF] HeartBeat
+2023-11-05 21:07:10.008 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:07:23.189 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:11:14.986 [INF] App server is starting.
+2023-11-05 21:12:10.486 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:12:10.487 [INF] HeartBeat
+2023-11-05 21:12:10.488 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:12:12.059 [INF] -------------Request-Begin------------
+2023-11-05 21:12:12.059 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "oznur@mail.com",
+  "password": "12345"
+}
+2023-11-05 21:12:12.059 [INF] 
+
+2023-11-05 21:12:12.059 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T21:17:12.0446468+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJvem51ckBtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkRlYWxlciIsIkZ1bGxOYW1lIjoib3pudXIgeWlsZGl6IiwiZXhwIjoxNjk5MjA4MjMxLCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.Isw2qVvD6vuC1o4V16ckkhEKpD62mAe8RAzZ_aEYT9o","email":"oznur@mail.com","userId":0}}
+2023-11-05 21:12:12.059 [INF] -------------Request-End------------
+2023-11-05 21:12:27.880 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:12:27.880 [INF] HeartBeat
+2023-11-05 21:12:27.880 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:12:30.157 [FTL] Path=/dealer/api/v1/Orders || Method=GET || Exception=Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[Data.Domain.Order, Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[Schema.OrderResponse, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2023-11-05 21:12:41.962 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:12:41.963 [INF] HeartBeat
+2023-11-05 21:12:41.963 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:12:41.969 [INF] -------------Request-Begin------------
+2023-11-05 21:12:41.969 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-05 21:12:41.969 [INF] 
+
+2023-11-05 21:12:41.969 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-05 21:12:41.969 [INF] -------------Request-End------------
+2023-11-05 21:12:43.297 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:12:43.297 [INF] HeartBeat
+2023-11-05 21:12:43.297 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:12:43.299 [INF] -------------Request-Begin------------
+2023-11-05 21:12:43.299 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-05 21:12:43.299 [INF] 
+
+2023-11-05 21:12:43.299 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-05 21:12:43.299 [INF] -------------Request-End------------
+2023-11-05 21:14:05.296 [INF] App server is starting.
+2023-11-05 21:14:18.883 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:14:18.884 [INF] HeartBeat
+2023-11-05 21:14:18.885 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:14:20.392 [INF] -------------Request-Begin------------
+2023-11-05 21:14:20.393 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "oznur@mail.com",
+  "password": "12345"
+}
+2023-11-05 21:14:20.393 [INF] 
+
+2023-11-05 21:14:20.393 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T21:19:20.3774601+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJvem51ckBtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkRlYWxlciIsIkZ1bGxOYW1lIjoib3pudXIgeWlsZGl6IiwiZXhwIjoxNjk5MjA4MzYwLCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.q0E6cly1vnvMgTjcBPavoSD8PbsstwZXA1af-PzpalY","email":"oznur@mail.com","userId":0}}
+2023-11-05 21:14:20.393 [INF] -------------Request-End------------
+2023-11-05 21:14:32.515 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 21:14:32.515 [INF] HeartBeat
+2023-11-05 21:14:32.515 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 21:14:41.862 [INF] -------------Request-Begin------------
+2023-11-05 21:14:41.862 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-05 21:14:41.862 [INF] 
+
+2023-11-05 21:14:41.862 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"orderDate":"2023-11-05T00:00:00","paymentOption":"Eft","statusName":"Pending","userId":6}]}
+2023-11-05 21:14:41.862 [INF] -------------Request-End------------

@@ -39,6 +39,11 @@ namespace Operation.Mapper
                 .ForMember(dest => dest.AccountNumber, opt => opt.MapFrom(src => src.Account.AccountNumber))
                 .ForMember(dest => dest.Name,
                     opt => opt.MapFrom(src => src.Account.User.FirstName + " " + src.Account.User.LastName));
+
+            CreateMap<OrderRequest, Order>();
+            CreateMap<Order, OrderResponse>()
+                .ForMember(dest => dest.StatusName, opt => opt.MapFrom(src => src.Status.Name))
+                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.User.Id));
         }
     }
 }

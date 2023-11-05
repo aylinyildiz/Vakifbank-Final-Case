@@ -8,7 +8,7 @@ namespace Schema
 {
     public class AccountRequest
     {
-        public int CustomerId { get; set; }
+        public int UserId { get; set; }
         public string Name { get; set; }
         public string CurrencyCode { get; set; }
     }

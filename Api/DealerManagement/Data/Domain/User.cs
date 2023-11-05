@@ -23,6 +23,7 @@ namespace Data.Domain
         public int RoleId { get; set; }
         public Role Role { get; set; }
         public List<Bill> Bills { get; set; }
+        public List<Order> Orders { get; set; }
         public List<Message> Messages1 { get; set; }
         public List<Message> Messages2 { get; set; }
         public virtual List<Address> Addresses { get; set; }

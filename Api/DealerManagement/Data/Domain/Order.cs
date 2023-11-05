@@ -12,6 +12,8 @@ namespace Data.Domain
         public string PaymentOption { get; set; }
         public int StatusId { get; set; }
         public Status Status { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 
     public class OrderConfigruration : IEntityTypeConfiguration<Order>
@@ -27,8 +29,7 @@ namespace Data.Domain
             builder.Property(x => x.StatusId).IsRequired(true);
             builder.Property(x => x.PaymentOption).IsRequired().HasMaxLength(50);
 
-
-
+            builder.HasOne(x => x.User).WithMany(x => x.Orders).HasForeignKey(x => x.UserId).IsRequired(true);
         }
     }
 }
