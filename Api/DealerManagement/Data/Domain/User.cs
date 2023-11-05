@@ -19,11 +19,14 @@ namespace Data.Domain
         public string Password { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public DateTime LastActivityDate { get; set; }
         public int RoleId { get; set; }
         public Role Role { get; set; }
         public List<Bill> Bills { get; set; }
         public List<Message> Messages1 { get; set; }
         public List<Message> Messages2 { get; set; }
+        public virtual List<Address> Addresses { get; set; }
+        public virtual List<Account> Accounts { get; set; }
     }
 
     public class UserConfigruration : IEntityTypeConfiguration<User>
@@ -37,6 +40,7 @@ namespace Data.Domain
             builder.Property(x => x.IsActive).IsRequired().HasDefaultValue(true);
 
             builder.Property(x => x.Email).IsRequired().HasMaxLength(50);
+            builder.Property(x => x.LastActivityDate).IsRequired();
             builder.Property(x => x.Password).IsRequired().HasMaxLength(50);
             builder.Property(x => x.FirstName).IsRequired().HasMaxLength(50);
             builder.Property(x => x.LastName).IsRequired().HasMaxLength(50);
@@ -44,9 +48,17 @@ namespace Data.Domain
             builder.HasIndex(x => x.Email).IsUnique(true);
 
             builder.HasOne(u => u.Role).WithMany(x => x.Users).HasForeignKey(u => u.RoleId).IsRequired().OnDelete(DeleteBehavior.NoAction);
-          
-           
 
+
+            builder.HasMany(x => x.Accounts)
+         .WithOne(x => x.User)
+         .HasForeignKey(x => x.UserId)
+         .IsRequired(true);
+
+            builder.HasMany(x => x.Addresses)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId)
+                .IsRequired(true);
         }
 
     }

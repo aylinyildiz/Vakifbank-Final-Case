@@ -1,0 +1,222 @@
+2023-11-05 19:48:41.470 [INF] App server is starting.
+2023-11-05 19:48:58.046 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 19:48:58.047 [INF] HeartBeat
+2023-11-05 19:48:58.048 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 19:49:02.287 [INF] -------------Request-Begin------------
+2023-11-05 19:49:02.287 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /api/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-05 19:49:02.287 [INF] 
+
+2023-11-05 19:49:02.287 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /api/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T19:54:02.2721891+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiQWRtaW4iLCJFbWFpbCI6InRlc3RAbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZ1bGxOYW1lIjoiYXlsaW4geWlsZGl6IiwiZXhwIjoxNjk5MjAzMjQyLCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.OuIPmbHsvXFDvK6lwsHoUSRRXxtQzi4vPFR6Q09tdc0","email":"test@mail.com","userId":0}}
+2023-11-05 19:49:02.288 [INF] -------------Request-End------------
+2023-11-05 19:49:55.737 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 19:49:55.738 [INF] HeartBeat
+2023-11-05 19:49:55.738 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 19:49:55.825 [INF] -------------Request-Begin------------
+2023-11-05 19:49:55.825 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /api/Users 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "123",
+  "firstName": "mumi",
+  "lastName": "korcil",
+  "roleId": 1
+}
+2023-11-05 19:49:55.825 [INF] 
+
+2023-11-05 19:49:55.825 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /api/Users 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-05 19:49:55.825 [INF] -------------Request-End------------
+2023-11-05 19:51:49.044 [INF] App server is starting.
+2023-11-05 19:52:05.808 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 19:52:05.809 [INF] HeartBeat
+2023-11-05 19:52:05.810 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 19:52:09.781 [INF] -------------Request-Begin------------
+2023-11-05 19:52:09.781 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-05 19:52:09.781 [INF] 
+
+2023-11-05 19:52:09.781 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T19:57:09.7632598+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiQWRtaW4iLCJFbWFpbCI6InRlc3RAbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZ1bGxOYW1lIjoiYXlsaW4geWlsZGl6IiwiZXhwIjoxNjk5MjAzNDI5LCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.4ZHhR1VciBngq2BmUP4C6BakXnwQhvYgwxdlB60A74U","email":"test@mail.com","userId":0}}
+2023-11-05 19:52:09.781 [INF] -------------Request-End------------
+2023-11-05 19:52:25.405 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 19:52:25.405 [INF] HeartBeat
+2023-11-05 19:52:25.405 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 19:52:25.493 [INF] -------------Request-Begin------------
+2023-11-05 19:52:25.493 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users 
+QueryString:  
+Request Body: 
+2023-11-05 19:52:25.493 [INF] 
+
+2023-11-05 19:52:25.493 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-05 19:52:25.493 [INF] -------------Request-End------------
+2023-11-05 19:52:45.858 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 19:52:45.858 [INF] HeartBeat
+2023-11-05 19:52:45.858 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 19:52:45.868 [INF] -------------Request-Begin------------
+2023-11-05 19:52:45.868 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users/1 
+QueryString:  
+Request Body: 
+2023-11-05 19:52:45.868 [INF] 
+
+2023-11-05 19:52:45.868 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-05 19:52:45.868 [INF] -------------Request-End------------
+2023-11-05 19:52:49.160 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 19:52:49.160 [INF] HeartBeat
+2023-11-05 19:52:49.160 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 19:52:49.163 [INF] -------------Request-Begin------------
+2023-11-05 19:52:49.163 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users/2 
+QueryString:  
+Request Body: 
+2023-11-05 19:52:49.163 [INF] 
+
+2023-11-05 19:52:49.163 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users/2 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-05 19:52:49.163 [INF] -------------Request-End------------
+2023-11-05 19:59:44.136 [INF] App server is starting.
+2023-11-05 20:00:00.789 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:00:00.790 [INF] HeartBeat
+2023-11-05 20:00:00.792 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:00:04.881 [INF] -------------Request-Begin------------
+2023-11-05 20:00:04.881 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-05 20:00:04.881 [INF] 
+
+2023-11-05 20:00:04.881 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T20:05:04.8663487+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiQWRtaW4iLCJFbWFpbCI6InRlc3RAbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZ1bGxOYW1lIjoiYXlsaW4geWlsZGl6IiwiZXhwIjoxNjk5MjAzOTA0LCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.g5kT8PEIhOjDAwsu2bPoinmyi78TTexYe7e1GnspDWg","email":"test@mail.com","userId":0}}
+2023-11-05 20:00:04.881 [INF] -------------Request-End------------
+2023-11-05 20:00:48.203 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:00:48.203 [INF] HeartBeat
+2023-11-05 20:00:48.203 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:00:48.268 [INF] -------------Request-Begin------------
+2023-11-05 20:00:48.268 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users 
+QueryString:  
+Request Body: 
+2023-11-05 20:00:48.269 [INF] 
+
+2023-11-05 20:00:48.269 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-11-05 20:00:48.269 [INF] -------------Request-End------------
+2023-11-05 20:01:39.601 [INF] App server is starting.
+2023-11-05 20:01:56.452 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:01:56.453 [INF] HeartBeat
+2023-11-05 20:01:56.454 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:02:02.968 [INF] -------------Request-Begin------------
+2023-11-05 20:02:02.969 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-05 20:02:02.969 [INF] 
+
+2023-11-05 20:02:02.969 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-05T20:07:02.952128+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiQWRtaW4iLCJFbWFpbCI6InRlc3RAbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZ1bGxOYW1lIjoiYXlsaW4geWlsZGl6IiwiZXhwIjoxNjk5MjA0MDIyLCJpc3MiOiJWa0FwaSIsImF1ZCI6IlZrQXBpIn0.bQWu-RqpyK9DpXOnkgP8o3GtPZnztbPmEUBAjWbBjF0","email":"test@mail.com","userId":0}}
+2023-11-05 20:02:02.969 [INF] -------------Request-End------------
+2023-11-05 20:02:22.337 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-05 20:02:22.337 [INF] HeartBeat
+2023-11-05 20:02:22.337 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-05 20:02:27.435 [INF] -------------Request-Begin------------
+2023-11-05 20:02:27.435 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users 
+QueryString:  
+Request Body: 
+2023-11-05 20:02:27.436 [INF] 
+
+2023-11-05 20:02:27.436 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Users 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"userNumber":0,"email":"test@mail.com","firstName":"aylin","lastName":"yildiz","roleId":1,"addresses":[],"accounts":[]}]}
+2023-11-05 20:02:27.436 [INF] -------------Request-End------------
