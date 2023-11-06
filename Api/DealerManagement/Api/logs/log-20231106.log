@@ -267,3 +267,28 @@ QueryString:
 StatusCode: 200 
 Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-06T22:20:00.0836845+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTI5ODM5OSwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.dIVPRbUrp6ofzWJpFwkrE7tQvpzUtTJ_it6BX8uLwWk","email":"mumi@mail.com","userId":0}}
 2023-11-06 22:15:00.114 [INF] -------------Request-End------------
+2023-11-06 22:18:21.752 [INF] App server is starting.
+2023-11-06 22:23:03.013 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-06 22:23:03.014 [INF] HeartBeat
+2023-11-06 22:23:03.015 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-06 22:23:05.624 [INF] -------------Request-Begin------------
+2023-11-06 22:23:05.624 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-06 22:23:05.624 [INF] 
+
+2023-11-06 22:23:05.624 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-06T22:28:05.6044757+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTI5ODg4NSwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.gETTuXcl8Idi6m0xnaoxtlq4KW308R21JChamkyjN5U","email":"mumi@mail.com","userId":0}}
+2023-11-06 22:23:05.625 [INF] -------------Request-End------------
+2023-11-06 22:26:31.136 [INF] App server is starting.

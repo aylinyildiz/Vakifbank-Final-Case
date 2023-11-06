@@ -10,7 +10,7 @@ namespace Schema
     {
         public DateTime OrderDate { get; set; }
         public string PaymentOption { get; set; }
-        public string StatusName { get; set; }
+        public int StatusId { get; set; }
         public int UserId { get; set; }
 
         public List<ProductOrderRequest> ProductOrders { get; set; }

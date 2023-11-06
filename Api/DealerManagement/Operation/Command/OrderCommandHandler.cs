@@ -42,7 +42,7 @@ namespace Operation.Command
             {
                 return new ApiResponse("Record not found!");
             }
-            entity.Status.Name = request.Model.StatusName;
+            entity.Status.Id = request.Model.StatusId;
 
             await dbContext.SaveChangesAsync(cancellationToken);
             return new ApiResponse();
