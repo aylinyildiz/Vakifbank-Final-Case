@@ -567,6 +567,55 @@ namespace Data.Migrations
                     b.ToTable("Product", "dbo");
                 });
 
+            modelBuilder.Entity("Data.Domain.ProductOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductOrder", "dbo");
+                });
+
+            modelBuilder.Entity("Data.Domain.ProductUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ProductUser", "dbo");
+                });
+
             modelBuilder.Entity("Data.Domain.Report", b =>
                 {
                     b.Property<int>("Id")
@@ -827,6 +876,44 @@ namespace Data.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Data.Domain.ProductOrder", b =>
+                {
+                    b.HasOne("Data.Domain.Order", "Order")
+                        .WithMany("ProductOrders")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Data.Domain.Product", "Product")
+                        .WithMany("ProductOrders")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Data.Domain.ProductUser", b =>
+                {
+                    b.HasOne("Data.Domain.Product", "Product")
+                        .WithMany("ProductUsers")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Data.Domain.User", "User")
+                        .WithMany("ProductUsers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Data.Domain.User", b =>
                 {
                     b.HasOne("Data.Domain.Role", "Role")
@@ -846,6 +933,18 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Eft");
+                });
+
+            modelBuilder.Entity("Data.Domain.Order", b =>
+                {
+                    b.Navigation("ProductOrders");
+                });
+
+            modelBuilder.Entity("Data.Domain.Product", b =>
+                {
+                    b.Navigation("ProductOrders");
+
+                    b.Navigation("ProductUsers");
                 });
 
             modelBuilder.Entity("Data.Domain.Role", b =>
@@ -872,6 +971,8 @@ namespace Data.Migrations
                     b.Navigation("Messages2");
 
                     b.Navigation("Orders");
+
+                    b.Navigation("ProductUsers");
                 });
 #pragma warning restore 612, 618
         }

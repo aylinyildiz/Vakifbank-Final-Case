@@ -43,11 +43,11 @@ namespace Operation.Mapper
             CreateMap<OrderRequest, Order>();
             CreateMap<Order, OrderResponse>()
                 .ForMember(dest => dest.StatusName, opt => opt.MapFrom(src => src.Status.Name))
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.User.Id));
+                .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.User.FirstName + " " + src.User.LastName));
 
             CreateMap<ProductRequest, Product>();
             CreateMap<Product, ProductResponse>()
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.User.Id));
+                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.ProductUsers.FirstOrDefault().Id));
         }
     }
 }

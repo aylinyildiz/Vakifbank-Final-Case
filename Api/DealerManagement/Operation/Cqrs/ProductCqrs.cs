@@ -14,5 +14,6 @@ namespace Operation.Cqrs
     public record DeleteProductCommand(int Id) : IRequest<ApiResponse>;
     public record GetAllProductQuery() : IRequest<ApiResponse<List<ProductResponse>>>;
     public record GetProductByIdQuery(int Id) : IRequest<ApiResponse<ProductResponse>>;
-    public record GetProductByUserIdQuery(int UserId) : IRequest<ApiResponse<List<ProductResponse>>>;
+    public record GetProductsByUserIdQuery(int UserId) : IRequest<ApiResponse<List<ProductResponse>>>;
+    public record GetStockStatusByProductIdQuery() : IRequest<ApiResponse<List<ProductResponse>>>;
 }

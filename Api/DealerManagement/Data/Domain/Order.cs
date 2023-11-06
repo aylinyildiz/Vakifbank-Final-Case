@@ -14,6 +14,8 @@ namespace Data.Domain
         public Status Status { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
+      
+        public List<ProductOrder> ProductOrders { get; set; }
     }
 
     public class OrderConfiguration : IEntityTypeConfiguration<Order>
@@ -30,6 +32,9 @@ namespace Data.Domain
             builder.Property(x => x.PaymentOption).IsRequired().HasMaxLength(50);
 
             builder.HasOne(x => x.User).WithMany(x => x.Orders).HasForeignKey(x => x.UserId).IsRequired(true);
+
+            builder.HasMany(x => x.ProductOrders).WithOne(x => x.Order).HasForeignKey(x => x.OrderId).OnDelete(DeleteBehavior.NoAction);
+
         }
     }
 }

@@ -16,8 +16,8 @@ namespace Data.Domain
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public List<ProductUser> ProductUsers { get; set; }
+        public List<ProductOrder> ProductOrders { get; set; }
     }
     public class ProductConfiguration : IEntityTypeConfiguration<Product>
     {
@@ -33,7 +33,11 @@ namespace Data.Domain
             builder.Property(x => x.Price).IsRequired(true);
             builder.Property(x => x.Name).IsRequired().HasMaxLength(50);
 
-            builder.HasOne(x => x.User).WithMany(x => x.Products).HasForeignKey(x => x.UserId).IsRequired(true);
+            builder.HasMany(x => x.ProductUsers).WithOne(x => x.Product).HasForeignKey(x => x.ProductId).OnDelete(DeleteBehavior.Restrict);
+       
+            builder.HasMany(x => x.ProductOrders).WithOne(x => x.Product).HasForeignKey(x => x.ProductId).OnDelete(DeleteBehavior.Restrict);
+
+
         }
     }
 }

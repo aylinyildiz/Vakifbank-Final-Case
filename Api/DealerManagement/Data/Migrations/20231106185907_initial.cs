@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Data.Migrations
 {
     /// <inheritdoc />
-    public partial class initialdatabase : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -97,6 +97,7 @@ namespace Data.Migrations
                     Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    LastActivityDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     RoleId = table.Column<int>(type: "int", nullable: false),
                     InsertUserId = table.Column<int>(type: "int", nullable: false),
                     InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -113,34 +114,6 @@ namespace Data.Migrations
                         principalSchema: "dbo",
                         principalTable: "Role",
                         principalColumn: "RoleId");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Order",
-                schema: "dbo",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PaymentOption = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    StatusId = table.Column<int>(type: "int", nullable: false),
-                    InsertUserId = table.Column<int>(type: "int", nullable: false),
-                    InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateUserId = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false, defaultValue: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Order", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Order_Status_StatusId",
-                        column: x => x.StatusId,
-                        principalSchema: "dbo",
-                        principalTable: "Status",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -241,6 +214,71 @@ namespace Data.Migrations
                         principalSchema: "dbo",
                         principalTable: "User",
                         principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Order",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    PaymentOption = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    StatusId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    InsertUserId = table.Column<int>(type: "int", nullable: false),
+                    InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateUserId = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false, defaultValue: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Order", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Order_Status_StatusId",
+                        column: x => x.StatusId,
+                        principalSchema: "dbo",
+                        principalTable: "Status",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Order_User_UserId",
+                        column: x => x.UserId,
+                        principalSchema: "dbo",
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ProductUser",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductUser", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ProductUser_Product_ProductId",
+                        column: x => x.ProductId,
+                        principalSchema: "dbo",
+                        principalTable: "Product",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_ProductUser_User_UserId",
+                        column: x => x.UserId,
+                        principalSchema: "dbo",
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -377,6 +415,35 @@ namespace Data.Migrations
                         principalColumn: "Id");
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ProductOrder",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ProductCount = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    OrderId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductOrder", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_ProductOrder_Order_OrderId",
+                        column: x => x.OrderId,
+                        principalSchema: "dbo",
+                        principalTable: "Order",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_ProductOrder_Product_ProductId",
+                        column: x => x.ProductId,
+                        principalSchema: "dbo",
+                        principalTable: "Product",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Account_AccountNumber",
                 schema: "dbo",
@@ -447,6 +514,36 @@ namespace Data.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_Order_UserId",
+                schema: "dbo",
+                table: "Order",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductOrder_OrderId",
+                schema: "dbo",
+                table: "ProductOrder",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductOrder_ProductId",
+                schema: "dbo",
+                table: "ProductOrder",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductUser_ProductId",
+                schema: "dbo",
+                table: "ProductUser",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductUser_UserId",
+                schema: "dbo",
+                table: "ProductUser",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_User_Email",
                 schema: "dbo",
                 table: "User",
@@ -484,11 +581,11 @@ namespace Data.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
-                name: "Order",
+                name: "ProductOrder",
                 schema: "dbo");
 
             migrationBuilder.DropTable(
-                name: "Product",
+                name: "ProductUser",
                 schema: "dbo");
 
             migrationBuilder.DropTable(
@@ -501,6 +598,14 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Account",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "Order",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "Product",
                 schema: "dbo");
 
             migrationBuilder.DropTable(

@@ -12,7 +12,8 @@ namespace Operation.Query
     public class ProductQueryHandler :
         IRequestHandler<GetAllProductQuery, ApiResponse<List<ProductResponse>>>,
         IRequestHandler<GetProductByIdQuery, ApiResponse<ProductResponse>>,
-        IRequestHandler<GetProductByUserIdQuery, ApiResponse<List<ProductResponse>>>
+        IRequestHandler<GetProductsByUserIdQuery, ApiResponse<List<ProductResponse>>>,
+        IRequestHandler<GetStockStatusByProductIdQuery, ApiResponse<List<ProductResponse>>>
     {
         private readonly DealerDbContext dbContext;
         private readonly IMapper mapper;
@@ -25,7 +26,7 @@ namespace Operation.Query
 
         public async Task<ApiResponse<List<ProductResponse>>> Handle(GetAllProductQuery request, CancellationToken cancellationToken)
         {
-            List<Product> list = await dbContext.Set<Product>().Include(x => x.User).ToListAsync(cancellationToken);
+            List<Product> list = await dbContext.Set<Product>().Include(x => x.ProductUsers).ThenInclude(x => x.User).ToListAsync(cancellationToken);
 
             List<ProductResponse> mapped = mapper.Map<List<ProductResponse>>(list);
             return new ApiResponse<List<ProductResponse>>(mapped);
@@ -33,7 +34,7 @@ namespace Operation.Query
 
         public async Task<ApiResponse<ProductResponse>> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            Product? entity = await dbContext.Set<Product>().Include(x => x.User)
+            Product? entity = await dbContext.Set<Product>().Include(x => x.ProductUsers).ThenInclude(x => x.User)
                .FirstOrDefaultAsync(x => x.Id == request.Id, cancellationToken);
 
             if (entity is null)
@@ -45,9 +46,17 @@ namespace Operation.Query
             return new ApiResponse<ProductResponse>(mapped);
         }
 
-        public async Task<ApiResponse<List<ProductResponse>>> Handle(GetProductByUserIdQuery request, CancellationToken cancellationToken)
+        public async Task<ApiResponse<List<ProductResponse>>> Handle(GetProductsByUserIdQuery request, CancellationToken cancellationToken)
         {
-            List<Product> list = await dbContext.Set<Product>().Include(x => x.User).Where(x => x.UserId == request.UserId).ToListAsync(cancellationToken);
+            List<Product> list = await dbContext.Set<Product>().Include(x => x.ProductUsers).ThenInclude(x => x.User).Where(x => x.Id == request.UserId).ToListAsync(cancellationToken);
+
+            List<ProductResponse> mapped = mapper.Map<List<ProductResponse>>(list);
+            return new ApiResponse<List<ProductResponse>>(mapped);
+        }
+
+        public async Task<ApiResponse<List<ProductResponse>>> Handle(GetStockStatusByProductIdQuery request, CancellationToken cancellationToken)
+        {
+            List<Product> list = await dbContext.Set<Product>().ToListAsync(cancellationToken);
 
             List<ProductResponse> mapped = mapper.Map<List<ProductResponse>>(list);
             return new ApiResponse<List<ProductResponse>>(mapped);

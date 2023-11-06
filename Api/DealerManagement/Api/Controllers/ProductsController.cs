@@ -43,7 +43,7 @@ namespace Api.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<ApiResponse<List<ProductResponse>>> GetByUserId(int Userid)
         {
-            var operation = new GetProductByUserIdQuery(Userid);
+            var operation = new GetProductsByUserIdQuery(Userid);
             var result = await mediator.Send(operation);
             return result;
         }
@@ -72,6 +72,15 @@ namespace Api.Controllers
         public async Task<ApiResponse> Delete(int id)
         {
             var operation = new DeleteProductCommand(id);
+            var result = await mediator.Send(operation);
+            return result;
+        }
+
+        [HttpGet("GetProductsStockStatus")]
+        [Authorize(Roles = "Dealer")]
+        public async Task<ApiResponse<List<ProductResponse>>> GetProductsStockStatus()
+        {
+            var operation = new GetStockStatusByProductIdQuery();
             var result = await mediator.Send(operation);
             return result;
         }

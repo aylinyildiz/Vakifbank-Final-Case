@@ -12,6 +12,8 @@ namespace Schema
         public string PaymentOption { get; set; }
         public string StatusName { get; set; }
         public int UserId { get; set; }
+
+        public List<ProductOrderRequest> ProductOrders { get; set; }
     }
 
     public class OrderResponse
@@ -19,6 +21,7 @@ namespace Schema
         public DateTime OrderDate { get; set; }
         public string PaymentOption { get; set; }
         public string StatusName { get; set; }
-        public int UserId { get; set; }
+        public string UserName { get; set; }
+        public List<ProductOrderResponse> ProductOrders { get; set; }
     }
 }
