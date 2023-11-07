@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Data.Migrations
 {
     /// <inheritdoc />
-    public partial class statusOrderrelation : Migration
+    public partial class billorder : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -217,42 +217,6 @@ namespace Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Order",
-                schema: "dbo",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    PaymentOption = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    StatusId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    InsertUserId = table.Column<int>(type: "int", nullable: false),
-                    InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateUserId = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false, defaultValue: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Order", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Order_Status_StatusId",
-                        column: x => x.StatusId,
-                        principalSchema: "dbo",
-                        principalTable: "Status",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Order_User_UserId",
-                        column: x => x.UserId,
-                        principalSchema: "dbo",
-                        principalTable: "User",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ProductUser",
                 schema: "dbo",
                 columns: table => new
@@ -416,6 +380,56 @@ namespace Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Order",
+                schema: "dbo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    PaymentOption = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    StatusId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    AddressId = table.Column<int>(type: "int", nullable: false),
+                    BillId = table.Column<int>(type: "int", nullable: false),
+                    InsertUserId = table.Column<int>(type: "int", nullable: false),
+                    InsertDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateUserId = table.Column<int>(type: "int", nullable: false, defaultValue: 0),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false, defaultValue: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Order", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Order_Address_AddressId",
+                        column: x => x.AddressId,
+                        principalSchema: "dbo",
+                        principalTable: "Address",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Order_Bill_BillId",
+                        column: x => x.BillId,
+                        principalSchema: "dbo",
+                        principalTable: "Bill",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Order_Status_StatusId",
+                        column: x => x.StatusId,
+                        principalSchema: "dbo",
+                        principalTable: "Status",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Order_User_UserId",
+                        column: x => x.UserId,
+                        principalSchema: "dbo",
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ProductOrder",
                 schema: "dbo",
                 columns: table => new
@@ -507,6 +521,18 @@ namespace Data.Migrations
                 column: "SenderId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Order_AddressId",
+                schema: "dbo",
+                table: "Order",
+                column: "AddressId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_BillId",
+                schema: "dbo",
+                table: "Order",
+                column: "BillId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Order_StatusId",
                 schema: "dbo",
                 table: "Order",
@@ -564,10 +590,6 @@ namespace Data.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
-                name: "Bill",
-                schema: "dbo");
-
-            migrationBuilder.DropTable(
                 name: "Card",
                 schema: "dbo");
 
@@ -592,10 +614,6 @@ namespace Data.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
-                name: "Address",
-                schema: "dbo");
-
-            migrationBuilder.DropTable(
                 name: "Account",
                 schema: "dbo");
 
@@ -608,7 +626,15 @@ namespace Data.Migrations
                 schema: "dbo");
 
             migrationBuilder.DropTable(
+                name: "Bill",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
                 name: "Status",
+                schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "Address",
                 schema: "dbo");
 
             migrationBuilder.DropTable(

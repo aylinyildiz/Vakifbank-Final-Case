@@ -21,6 +21,7 @@ namespace Data.Domain
         public string City { get; set; }
         public string County { get; set; }
         public string PostalCode { get; set; }
+        public List<Order> Orders { get; set; }
     }
 
     public class AddressConfiguration : IEntityTypeConfiguration<Address>

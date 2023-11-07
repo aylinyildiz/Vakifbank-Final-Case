@@ -22,6 +22,7 @@ namespace Data.Domain
         public string LastName { get; set; }
         public DateTime LastActivityDate { get; set; }
         public int RoleId { get; set; }
+        public int Profit { get; set; }
         public Role Role { get; set; }
         public List<ProductUser> ProductUsers { get; set; }
         public List<Bill> Bills { get; set; }

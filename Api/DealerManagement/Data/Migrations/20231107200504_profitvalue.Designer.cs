@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DealerDbContext))]
-    [Migration("20231107190443_statusOrderrelation")]
-    partial class statusOrderrelation
+    [Migration("20231107200504_profitvalue")]
+    partial class profitvalue
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -484,6 +484,12 @@ namespace Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AddressId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BillId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("InsertDate")
                         .HasColumnType("datetime2");
 
@@ -518,6 +524,10 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AddressId");
+
+                    b.HasIndex("BillId");
 
                     b.HasIndex("StatusId");
 
@@ -745,6 +755,9 @@ namespace Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("Profit")
+                        .HasColumnType("int");
+
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
@@ -861,6 +874,18 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Domain.Order", b =>
                 {
+                    b.HasOne("Data.Domain.Address", "Address")
+                        .WithMany("Orders")
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Data.Domain.Bill", "Bill")
+                        .WithMany("Orders")
+                        .HasForeignKey("BillId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("Data.Domain.Status", "Status")
                         .WithMany("Order")
                         .HasForeignKey("StatusId")
@@ -872,6 +897,10 @@ namespace Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Address");
+
+                    b.Navigation("Bill");
 
                     b.Navigation("Status");
 
@@ -935,6 +964,16 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Eft");
+                });
+
+            modelBuilder.Entity("Data.Domain.Address", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("Data.Domain.Bill", b =>
+                {
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("Data.Domain.Order", b =>

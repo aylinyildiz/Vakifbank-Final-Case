@@ -14,6 +14,10 @@ namespace Data.Domain
         public Status Status { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
+        public int AddressId { get; set; }
+        public Address Address { get; set; }
+        public int BillId { get; set; }
+        public Bill Bill { get; set; }
       
         public List<ProductOrder> ProductOrders { get; set; }
     }
@@ -35,6 +39,9 @@ namespace Data.Domain
 
             builder.HasMany(x => x.ProductOrders).WithOne(x => x.Order).HasForeignKey(x => x.OrderId).OnDelete(DeleteBehavior.NoAction);
             builder.HasOne(o => o.Status).WithMany(s => s.Order).HasForeignKey(o => o.StatusId);
+
+            builder.HasOne(o => o.Address).WithMany(s => s.Orders).HasForeignKey(o => o.AddressId).OnDelete(DeleteBehavior.NoAction);
+            builder.HasOne(o => o.Bill).WithMany(s => s.Orders).HasForeignKey(o => o.BillId).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

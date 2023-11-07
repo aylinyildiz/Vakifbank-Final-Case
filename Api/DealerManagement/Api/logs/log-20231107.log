@@ -642,3 +642,194 @@ Response Body: {"success":true,"message":"Success","response":{"expireDate":"202
 2023-11-07 22:19:37.626 [INF] LogRequestLoggingMiddleware.Invoke
 2023-11-07 22:23:03.912 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Response.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.Id.
 2023-11-07 22:24:35.597 [INF] App server is starting.
+2023-11-07 22:29:25.647 [INF] App server is starting.
+2023-11-07 22:29:38.238 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:29:38.239 [INF] HeartBeat
+2023-11-07 22:29:38.240 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:29:39.848 [INF] -------------Request-Begin------------
+2023-11-07 22:29:39.848 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-07 22:29:39.848 [INF] 
+
+2023-11-07 22:29:39.848 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T22:34:39.8302138+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJ0ZXN0QG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4NTY3OSwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.XmTngEdGbRykMtb_F5TjY2VAyAkoohEsthE2a5Osuc0","email":"test@mail.com","userId":0}}
+2023-11-07 22:29:39.848 [INF] -------------Request-End------------
+2023-11-07 22:29:56.888 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:29:56.888 [INF] HeartBeat
+2023-11-07 22:29:56.888 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:29:57.073 [INF] -------------Request-Begin------------
+2023-11-07 22:29:57.073 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Products 
+QueryString:  
+Request Body: 
+2023-11-07 22:29:57.073 [INF] 
+
+2023-11-07 22:29:57.073 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Products 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"muz","price":10.00,"stockQuantity":1000,"userId":0},{"name":"çilek","price":20.00,"stockQuantity":1235,"userId":0}]}
+2023-11-07 22:29:57.073 [INF] -------------Request-End------------
+2023-11-07 22:31:00.533 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:31:00.533 [INF] HeartBeat
+2023-11-07 22:31:00.533 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:31:00.547 [INF] -------------Request-Begin------------
+2023-11-07 22:31:00.547 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+Request Body: 
+2023-11-07 22:31:00.547 [INF] 
+
+2023-11-07 22:31:00.547 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 22:31:00.547 [INF] -------------Request-End------------
+2023-11-07 22:31:26.131 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:31:26.136 [INF] HeartBeat
+2023-11-07 22:31:26.137 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:31:26.206 [INF] -------------Request-Begin------------
+2023-11-07 22:31:26.206 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-07 22:31:26.206 [INF] 
+
+2023-11-07 22:31:26.206 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T22:36:26.2060076+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJ0ZXN0QG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4NTc4NiwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.1iFwuAQL7OkuWZfr5PkqKnp2Ao0UPE8pjSDhYg_TQmE","email":"test@mail.com","userId":0}}
+2023-11-07 22:31:26.207 [INF] -------------Request-End------------
+2023-11-07 22:31:44.947 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:31:44.947 [INF] HeartBeat
+2023-11-07 22:31:44.947 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:31:44.951 [INF] -------------Request-Begin------------
+2023-11-07 22:31:44.951 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+Request Body: 
+2023-11-07 22:31:44.951 [INF] 
+
+2023-11-07 22:31:44.951 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-11-07 22:31:44.951 [INF] -------------Request-End------------
+2023-11-07 22:32:50.325 [INF] App server is starting.
+2023-11-07 22:33:04.708 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:33:04.709 [INF] HeartBeat
+2023-11-07 22:33:04.710 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:33:06.294 [INF] -------------Request-Begin------------
+2023-11-07 22:33:06.294 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-07 22:33:06.294 [INF] 
+
+2023-11-07 22:33:06.295 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T22:38:06.2778501+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJ0ZXN0QG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4NTg4NiwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.GK3Leoctj-Zc5tw3FjiGw5iDVB2f0ydWtENkp9hbNFc","email":"test@mail.com","userId":0}}
+2023-11-07 22:33:06.295 [INF] -------------Request-End------------
+2023-11-07 22:33:25.544 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:33:25.544 [INF] HeartBeat
+2023-11-07 22:33:25.544 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:33:25.701 [INF] -------------Request-Begin------------
+2023-11-07 22:33:25.701 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+Request Body: 
+2023-11-07 22:33:25.701 [INF] 
+
+2023-11-07 22:33:25.701 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":1,"orderDate":"2023-11-07T19:09:06.469","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":2,"orderDate":"2023-11-07T19:09:06.469","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":3,"orderDate":"2023-11-07T19:14:04.864","paymentOption":"sadas","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":4,"orderDate":"2023-11-07T19:14:04.864","paymentOption":"sadas","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":5,"orderDate":"2023-11-07T19:17:40.412","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":6,"orderDate":"2023-11-07T19:17:40.412","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]}]}
+2023-11-07 22:33:25.701 [INF] -------------Request-End------------
+2023-11-07 22:34:34.288 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:34:34.317 [INF] HeartBeat
+2023-11-07 22:34:34.318 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:34:34.377 [INF] -------------Request-Begin------------
+2023-11-07 22:34:34.377 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+Request Body: 
+2023-11-07 22:34:34.377 [INF] 
+
+2023-11-07 22:34:34.377 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":2,"orderDate":"2023-11-07T19:09:06.469","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":3,"orderDate":"2023-11-07T19:14:04.864","paymentOption":"sadas","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":4,"orderDate":"2023-11-07T19:14:04.864","paymentOption":"sadas","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":5,"orderDate":"2023-11-07T19:17:40.412","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":6,"orderDate":"2023-11-07T19:17:40.412","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]}]}
+2023-11-07 22:34:34.378 [INF] -------------Request-End------------
+2023-11-07 22:34:44.021 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:34:44.021 [INF] HeartBeat
+2023-11-07 22:34:44.021 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:34:44.035 [INF] -------------Request-Begin------------
+2023-11-07 22:34:44.036 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+Request Body: 
+2023-11-07 22:34:44.036 [INF] 
+
+2023-11-07 22:34:44.036 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders/ByUserId/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":3,"orderDate":"2023-11-07T19:14:04.864","paymentOption":"sadas","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":4,"orderDate":"2023-11-07T19:14:04.864","paymentOption":"sadas","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":5,"orderDate":"2023-11-07T19:17:40.412","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]},{"id":6,"orderDate":"2023-11-07T19:17:40.412","paymentOption":"string","statusName":null,"userName":"mumi korcil","productOrders":[]}]}
+2023-11-07 22:34:44.036 [INF] -------------Request-End------------

@@ -42,7 +42,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("ByUserId/{Userid}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Dealer")]
         public async Task<ApiResponse<List<OrderResponse>>> GetByUserId(int Userid)
         {
             var operation = new GetOrderByUserIdQuery(Userid);
