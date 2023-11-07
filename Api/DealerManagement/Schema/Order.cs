@@ -18,6 +18,7 @@ namespace Schema
 
     public class OrderResponse
     {
+        public int Id { get; set; }
         public DateTime OrderDate { get; set; }
         public string PaymentOption { get; set; }
         public string StatusName { get; set; }

@@ -1,0 +1,644 @@
+2023-11-07 21:01:16.095 [INF] App server is starting.
+2023-11-07 21:01:46.441 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:01:46.442 [INF] HeartBeat
+2023-11-07 21:01:46.443 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:01:48.241 [INF] -------------Request-Begin------------
+2023-11-07 21:01:48.241 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:01:48.241 [INF] 
+
+2023-11-07 21:01:48.241 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:06:48.2249124+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MDQwOCwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.t0dGCiR7F7kb5z1vBrYvra8MohObAgVj7bG02NoBxVs","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:01:48.241 [INF] -------------Request-End------------
+2023-11-07 21:02:27.392 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:02:27.392 [INF] HeartBeat
+2023-11-07 21:02:27.392 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:02:44.671 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> Order
+System.Collections.Generic.List`1[[Schema.OrderRequest, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Data.Domain.Order
+2023-11-07 21:07:13.852 [INF] App server is starting.
+2023-11-07 21:07:28.115 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:07:28.116 [INF] HeartBeat
+2023-11-07 21:07:28.117 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:07:29.824 [INF] -------------Request-Begin------------
+2023-11-07 21:07:29.824 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:07:29.824 [INF] 
+
+2023-11-07 21:07:29.824 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:12:29.8063339+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MDc0OSwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.AuhSP75ZkF03rR4QUZs2C29ZzVybfvoGzkviv5v3l1A","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:07:29.824 [INF] -------------Request-End------------
+2023-11-07 21:08:14.210 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:08:14.210 [INF] HeartBeat
+2023-11-07 21:08:14.210 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:10:57.808 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> Order
+System.Collections.Generic.List`1[[Schema.OrderRequest, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Data.Domain.Order
+2023-11-07 21:12:55.956 [INF] App server is starting.
+2023-11-07 21:13:06.079 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:13:06.080 [INF] HeartBeat
+2023-11-07 21:13:06.082 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:13:07.752 [INF] -------------Request-Begin------------
+2023-11-07 21:13:07.752 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:13:07.752 [INF] 
+
+2023-11-07 21:13:07.752 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:18:07.7353524+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MTA4NywiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.tY8SW4938ZTOKL4o8dk5jVdh9XUmR-wLAw6KGHdw4ao","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:13:07.753 [INF] -------------Request-End------------
+2023-11-07 21:13:32.632 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:13:32.654 [INF] HeartBeat
+2023-11-07 21:13:32.655 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:13:52.047 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> Order
+System.Collections.Generic.List`1[[Schema.OrderRequest, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Data.Domain.Order
+2023-11-07 21:14:28.935 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:14:28.937 [INF] HeartBeat
+2023-11-07 21:14:28.938 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:14:28.971 [INF] -------------Request-Begin------------
+2023-11-07 21:14:28.971 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: [
+  {
+    "orderDate": "2023-11-07T18:14:16.992Z",
+    "paymentOption": "stfhfghfring",
+    "statusId": 1,
+    "userId": 4,
+    "productOrders": [
+      {
+        "productCount": 10,
+        "productId": 2
+      }
+    ]
+  }
+]
+2023-11-07 21:14:28.971 [INF] 
+
+2023-11-07 21:14:28.971 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:14:28.971 [INF] -------------Request-End------------
+2023-11-07 21:15:58.452 [INF] App server is starting.
+2023-11-07 21:19:46.573 [INF] App server is starting.
+2023-11-07 21:20:05.286 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:20:05.287 [INF] HeartBeat
+2023-11-07 21:20:05.288 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:20:06.925 [INF] -------------Request-Begin------------
+2023-11-07 21:20:06.926 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:20:06.926 [INF] 
+
+2023-11-07 21:20:06.926 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:25:06.9094422+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MTUwNiwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.tzxwGuRmBFmcl_4kVpQ7IhXBZbNHPT9zd0z0MzCA-LI","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:20:06.926 [INF] -------------Request-End------------
+2023-11-07 21:20:35.715 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:20:35.716 [INF] HeartBeat
+2023-11-07 21:20:35.716 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:21:24.821 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> Order
+System.Collections.Generic.List`1[[Schema.OrderRequest, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Data.Domain.Order
+2023-11-07 21:21:34.897 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:21:34.897 [INF] HeartBeat
+2023-11-07 21:21:34.897 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:21:34.909 [INF] -------------Request-Begin------------
+2023-11-07 21:21:34.909 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-07 21:21:34.909 [INF] 
+
+2023-11-07 21:21:34.909 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:21:34.909 [INF] -------------Request-End------------
+2023-11-07 21:25:39.827 [INF] App server is starting.
+2023-11-07 21:25:59.124 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:25:59.125 [INF] HeartBeat
+2023-11-07 21:25:59.126 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:26:00.802 [INF] -------------Request-Begin------------
+2023-11-07 21:26:00.803 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:26:00.803 [INF] 
+
+2023-11-07 21:26:00.803 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:31:00.785139+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MTg2MCwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.EGIW4vEv1rgC2o_d4EGPdBlw5iaUWy8jNVprlC_yM9c","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:26:00.803 [INF] -------------Request-End------------
+2023-11-07 21:26:31.333 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:26:31.333 [INF] HeartBeat
+2023-11-07 21:26:31.333 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:28:27.650 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> Order
+System.Collections.Generic.List`1[[Schema.OrderRequest, Schema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Data.Domain.Order
+2023-11-07 21:29:04.989 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:29:04.989 [INF] HeartBeat
+2023-11-07 21:29:04.989 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:29:05.002 [INF] -------------Request-Begin------------
+2023-11-07 21:29:05.002 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-07 21:29:05.002 [INF] 
+
+2023-11-07 21:29:05.002 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:29:05.002 [INF] -------------Request-End------------
+2023-11-07 21:29:11.649 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:29:11.650 [INF] HeartBeat
+2023-11-07 21:29:11.650 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:29:11.652 [INF] -------------Request-Begin------------
+2023-11-07 21:29:11.652 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-07 21:29:11.652 [INF] 
+
+2023-11-07 21:29:11.652 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:29:11.652 [INF] -------------Request-End------------
+2023-11-07 21:30:31.995 [INF] App server is starting.
+2023-11-07 21:30:43.554 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:30:43.555 [INF] HeartBeat
+2023-11-07 21:30:43.556 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:30:45.218 [INF] -------------Request-Begin------------
+2023-11-07 21:30:45.219 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:30:45.219 [INF] 
+
+2023-11-07 21:30:45.219 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:35:45.2035221+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MjE0NSwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.N06f-XELqjWwbywaPEiTkjpB0HpDmYUI9sAlcTl2Jqs","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:30:45.219 [INF] -------------Request-End------------
+2023-11-07 21:31:18.643 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:31:18.643 [INF] HeartBeat
+2023-11-07 21:31:18.643 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:32:38.866 [INF] App server is starting.
+2023-11-07 21:32:51.906 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:32:51.907 [INF] HeartBeat
+2023-11-07 21:32:51.908 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:32:53.620 [INF] -------------Request-Begin------------
+2023-11-07 21:32:53.620 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:32:53.620 [INF] 
+
+2023-11-07 21:32:53.620 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:37:53.6046111+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MjI3MywiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.7C5sAC97wrPmzwF7In6mUsx27iJC99qI-yl3y_AIxa8","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:32:53.620 [INF] -------------Request-End------------
+2023-11-07 21:33:23.952 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:33:23.952 [INF] HeartBeat
+2023-11-07 21:33:23.952 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:34:02.640 [INF] App server is starting.
+2023-11-07 21:35:36.038 [INF] App server is starting.
+2023-11-07 21:35:54.737 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:35:54.738 [INF] HeartBeat
+2023-11-07 21:35:54.739 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:35:56.423 [INF] -------------Request-Begin------------
+2023-11-07 21:35:56.423 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:35:56.423 [INF] 
+
+2023-11-07 21:35:56.423 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:40:56.4054112+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MjQ1NiwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.c2C9_3UJRXSblRFTjJovD45TURRxQSFVM3CZYEpZZz4","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:35:56.423 [INF] -------------Request-End------------
+2023-11-07 21:36:34.073 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:36:34.073 [INF] HeartBeat
+2023-11-07 21:36:34.073 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:36:36.245 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:36:48.433 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:36:48.434 [INF] HeartBeat
+2023-11-07 21:36:48.434 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:36:59.584 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:38:26.356 [INF] App server is starting.
+2023-11-07 21:38:45.958 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:38:45.959 [INF] HeartBeat
+2023-11-07 21:38:45.960 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:38:47.647 [INF] -------------Request-Begin------------
+2023-11-07 21:38:47.647 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:38:47.647 [INF] 
+
+2023-11-07 21:38:47.647 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:43:47.6277067+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MjYyNywiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.5ykEg765pu2BV0YrMHV3LAOJ-Jh8OCh-pMKwH1BXBus","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:38:47.647 [INF] -------------Request-End------------
+2023-11-07 21:39:15.757 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:39:15.787 [INF] HeartBeat
+2023-11-07 21:39:15.787 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:40:22.681 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:40:39.791 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:40:39.791 [INF] HeartBeat
+2023-11-07 21:40:39.791 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:40:39.800 [INF] -------------Request-Begin------------
+2023-11-07 21:40:39.800 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-07 21:40:39.800 [INF] 
+
+2023-11-07 21:40:39.800 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:40:39.800 [INF] -------------Request-End------------
+2023-11-07 21:40:49.516 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:40:49.516 [INF] HeartBeat
+2023-11-07 21:40:49.516 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:45:42.504 [INF] App server is starting.
+2023-11-07 21:46:01.485 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:46:01.486 [INF] HeartBeat
+2023-11-07 21:46:01.487 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:46:03.133 [INF] -------------Request-Begin------------
+2023-11-07 21:46:03.133 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:46:03.133 [INF] 
+
+2023-11-07 21:46:03.133 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:51:03.1172684+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MzA2MywiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.p9hyQQUghj0YigFjWOQSpO0arj4VJ3DekAbHyZjm-3o","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:46:03.133 [INF] -------------Request-End------------
+2023-11-07 21:46:36.606 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:46:36.606 [INF] HeartBeat
+2023-11-07 21:46:36.606 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:46:39.821 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:46:44.718 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:46:44.718 [INF] HeartBeat
+2023-11-07 21:46:44.718 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:46:47.164 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:47:36.047 [INF] App server is starting.
+2023-11-07 21:48:08.348 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:48:08.349 [INF] HeartBeat
+2023-11-07 21:48:08.350 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:48:10.068 [INF] -------------Request-Begin------------
+2023-11-07 21:48:10.068 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "mumi@mail.com",
+  "password": "12345"
+}
+2023-11-07 21:48:10.068 [INF] 
+
+2023-11-07 21:48:10.068 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T21:53:10.051585+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJtdW1pQG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4MzE4OSwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.oS2j_PfRQS5kweOHC4NGBC-a77PstqHmEs5SC5B_dCM","email":"mumi@mail.com","userId":0}}
+2023-11-07 21:48:10.068 [INF] -------------Request-End------------
+2023-11-07 21:48:33.365 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:48:33.368 [INF] HeartBeat
+2023-11-07 21:48:33.368 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:48:38.360 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:49:01.062 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:49:02.199 [INF] HeartBeat
+2023-11-07 21:49:02.199 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:49:02.206 [INF] -------------Request-Begin------------
+2023-11-07 21:49:02.207 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-07 21:49:02.207 [INF] 
+
+2023-11-07 21:49:02.207 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:49:02.207 [INF] -------------Request-End------------
+2023-11-07 21:49:08.083 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:49:08.083 [INF] HeartBeat
+2023-11-07 21:49:08.083 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:49:37.813 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:50:24.824 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:50:24.824 [INF] HeartBeat
+2023-11-07 21:50:24.824 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:50:27.527 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:50:45.176 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:50:45.176 [INF] HeartBeat
+2023-11-07 21:50:45.176 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:50:45.177 [INF] -------------Request-Begin------------
+2023-11-07 21:50:45.177 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+Request Body: 
+2023-11-07 21:50:45.177 [INF] 
+
+2023-11-07 21:50:45.177 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Orders 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-11-07 21:50:45.177 [INF] -------------Request-End------------
+2023-11-07 21:50:49.329 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:50:49.329 [INF] HeartBeat
+2023-11-07 21:50:49.330 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 21:50:51.717 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=An error occurred while saving the entity changes. See the inner exception for details.
+2023-11-07 21:51:31.992 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 21:51:31.992 [INF] HeartBeat
+2023-11-07 21:51:31.992 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:01:10.847 [INF] App server is starting.
+2023-11-07 22:08:29.881 [INF] App server is starting.
+2023-11-07 22:08:46.516 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:08:46.516 [INF] HeartBeat
+2023-11-07 22:08:46.517 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:08:48.033 [INF] -------------Request-Begin------------
+2023-11-07 22:08:48.033 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "827ccb0eea8a706c4c34a16891f84e7b"
+}
+2023-11-07 22:08:48.033 [INF] 
+
+2023-11-07 22:08:48.033 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-11-07 22:08:48.033 [INF] -------------Request-End------------
+2023-11-07 22:08:53.487 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:08:53.487 [INF] HeartBeat
+2023-11-07 22:08:53.487 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:08:53.640 [INF] -------------Request-Begin------------
+2023-11-07 22:08:53.640 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-07 22:08:53.640 [INF] 
+
+2023-11-07 22:08:53.640 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T22:13:53.6341233+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJ0ZXN0QG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4NDQzMywiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.ZgigPOA0fjcd9yrPMt5dih9RCGPpDwLN34askwAqOMA","email":"test@mail.com","userId":0}}
+2023-11-07 22:08:53.640 [INF] -------------Request-End------------
+2023-11-07 22:09:20.267 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:09:20.267 [INF] HeartBeat
+2023-11-07 22:09:20.267 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:09:32.294 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OrderRequest -> ProductOrder
+Schema.OrderRequest -> Data.Domain.ProductOrder
+2023-11-07 22:09:39.569 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:09:39.569 [INF] HeartBeat
+2023-11-07 22:09:39.569 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:11:16.509 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OrderRequest -> ProductOrder
+Schema.OrderRequest -> Data.Domain.ProductOrder
+2023-11-07 22:13:37.629 [INF] App server is starting.
+2023-11-07 22:13:52.045 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:13:52.046 [INF] HeartBeat
+2023-11-07 22:13:52.047 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:13:53.702 [INF] -------------Request-Begin------------
+2023-11-07 22:13:53.702 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-07 22:13:53.702 [INF] 
+
+2023-11-07 22:13:53.702 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T22:18:53.6838624+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJ0ZXN0QG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4NDczMywiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.PoRLJDRU36ZSG0F8jSZ4Aq227-qGrgdUSmPdDiEiECY","email":"test@mail.com","userId":0}}
+2023-11-07 22:13:53.702 [INF] -------------Request-End------------
+2023-11-07 22:14:41.079 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:14:41.079 [INF] HeartBeat
+2023-11-07 22:14:41.080 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:14:41.651 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OrderRequest -> ProductOrder
+Schema.OrderRequest -> Data.Domain.ProductOrder
+2023-11-07 22:16:07.959 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:16:07.960 [INF] HeartBeat
+2023-11-07 22:16:07.961 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:16:25.443 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OrderRequest -> ProductOrder
+Schema.OrderRequest -> Data.Domain.ProductOrder
+2023-11-07 22:17:12.426 [INF] App server is starting.
+2023-11-07 22:17:25.304 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:17:25.305 [INF] HeartBeat
+2023-11-07 22:17:25.306 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:17:27.083 [INF] -------------Request-Begin------------
+2023-11-07 22:17:27.083 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+Request Body: {
+  "email": "test@mail.com",
+  "password": "12345"
+}
+2023-11-07 22:17:27.083 [INF] 
+
+2023-11-07 22:17:27.083 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:44309 
+Path: /dealer/api/v1/Token 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-11-07T22:22:27.0673288+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIiLCJSb2xlIjoiRGVhbGVyIiwiRW1haWwiOiJ0ZXN0QG1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRGVhbGVyIiwiRnVsbE5hbWUiOiJtdW1pIGtvcmNpbCIsImV4cCI6MTY5OTM4NDk0NiwiaXNzIjoiVmtBcGkiLCJhdWQiOiJWa0FwaSJ9.o0rnX6JkCj0oGpgdK4i2-87YOcKum03DJCQRWm0hkxk","email":"test@mail.com","userId":0}}
+2023-11-07 22:17:27.083 [INF] -------------Request-End------------
+2023-11-07 22:18:01.836 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:18:01.836 [INF] HeartBeat
+2023-11-07 22:18:01.836 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:18:02.407 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Response.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.Id.
+2023-11-07 22:19:37.625 [INF] LogErrorHandlerMiddleware.Invoke
+2023-11-07 22:19:37.626 [INF] HeartBeat
+2023-11-07 22:19:37.626 [INF] LogRequestLoggingMiddleware.Invoke
+2023-11-07 22:23:03.912 [FTL] Path=/dealer/api/v1/Orders || Method=POST || Exception=A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Response.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.ProductOrders.Order.Id.
+2023-11-07 22:24:35.597 [INF] App server is starting.

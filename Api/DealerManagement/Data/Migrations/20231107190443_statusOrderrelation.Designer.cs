@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DealerDbContext))]
-    [Migration("20231106185907_initial")]
-    partial class initial
+    [Migration("20231107190443_statusOrderrelation")]
+    partial class statusOrderrelation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -519,8 +519,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("StatusId")
-                        .IsUnique();
+                    b.HasIndex("StatusId");
 
                     b.HasIndex("UserId");
 
@@ -863,8 +862,8 @@ namespace Data.Migrations
             modelBuilder.Entity("Data.Domain.Order", b =>
                 {
                     b.HasOne("Data.Domain.Status", "Status")
-                        .WithOne("Order")
-                        .HasForeignKey("Data.Domain.Order", "StatusId")
+                        .WithMany("Order")
+                        .HasForeignKey("StatusId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -957,8 +956,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Domain.Status", b =>
                 {
-                    b.Navigation("Order")
-                        .IsRequired();
+                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("Data.Domain.User", b =>

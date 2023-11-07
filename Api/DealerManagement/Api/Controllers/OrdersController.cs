@@ -53,7 +53,7 @@ namespace Api.Controllers
 
         [HttpPost]
         [Authorize(Roles = "Dealer")]
-        public async Task<ApiResponse<OrderResponse>> Post([FromBody] List<OrderRequest> request)
+        public async Task<ApiResponse<OrderResponse>> Post([FromBody] OrderRequest request)
         {
             var operation = new CreateOrderCommand(request);
             var result = await mediator.Send(operation);

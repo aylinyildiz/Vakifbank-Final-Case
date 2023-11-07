@@ -8,15 +8,12 @@ namespace Schema
 {
     public class ProductOrderRequest
     {
-        public int Id { get; set; }
         public int ProductCount { get; set; } = 0;
         public int ProductId { get; set; }
-        public int OrderId { get; set; }
     }
 
     public class ProductOrderResponse
     {
-        public int Id { get; set; }
         public int ProductCount { get; set; } = 0;
         public int ProductId { get; set; }
         public ProductResponse Product { get; set; }

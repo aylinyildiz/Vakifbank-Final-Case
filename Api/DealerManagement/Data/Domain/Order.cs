@@ -34,7 +34,7 @@ namespace Data.Domain
             builder.HasOne(x => x.User).WithMany(x => x.Orders).HasForeignKey(x => x.UserId).IsRequired(true);
 
             builder.HasMany(x => x.ProductOrders).WithOne(x => x.Order).HasForeignKey(x => x.OrderId).OnDelete(DeleteBehavior.NoAction);
-
+            builder.HasOne(o => o.Status).WithMany(s => s.Order).HasForeignKey(o => o.StatusId);
         }
     }
 }

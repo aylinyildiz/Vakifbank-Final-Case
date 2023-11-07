@@ -27,11 +27,16 @@ namespace Operation.Command
         public async Task<ApiResponse<OrderResponse>> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
             Order mapped = mapper.Map<Order>(request.Model);
+
+            mapped.UpdateDate = DateTime.Now;
+            mapped.InsertDate = DateTime.Now;
+
             var entity = await dbContext.Set<Order>().AddAsync(mapped, cancellationToken);
-            
+
             await dbContext.SaveChangesAsync(cancellationToken);
 
             var response = mapper.Map<OrderResponse>(entity.Entity);
+
             return new ApiResponse<OrderResponse>(response);
         }
 
