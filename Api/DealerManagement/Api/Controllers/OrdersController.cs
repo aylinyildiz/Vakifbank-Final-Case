@@ -60,6 +60,25 @@ namespace Api.Controllers
             return result;
         }
 
+        [HttpPut("UpdateOrderStatus/{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ApiResponse> UpdateOrderStatus(int id, [FromBody] OrderRequest request)
+        {
+            var operation = new UpdateOrderStatusCommand(request, id);
+            var result = await mediator.Send(operation);
+            return result;
+        }
+
+        [HttpPut("UpdateOrderByDealer/{id}")]
+        [Authorize(Roles = "Dealer")]
+        public async Task<ApiResponse> UpdateOrderByDealer(int id, [FromBody] OrderRequest request)
+        {
+            var operation = new UpdateOrderByDealerCommand(request, id);
+            var result = await mediator.Send(operation);
+            return result;
+        }
+
+
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<ApiResponse> Put(int id, [FromBody] OrderRequest request)
