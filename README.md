@@ -10,6 +10,7 @@ This project is a .NET Web API application utilizing essential libraries such as
 - Clone Project
   
 `git clone https://github.com/aylinyildiz/Vakifbank-Final-Case.git`
+
 - Create Database With Code First
   
 `Add-Migration InitialCreate`
@@ -35,8 +36,6 @@ This project is a .NET Web API application utilizing essential libraries such as
 - MSSQL
 
 - C#
-
-- Jwt Token
 
 
 ### Endpoints
@@ -75,3 +74,59 @@ An endpoint protected with Authorize(Roles = "Admin") deletes a specific account
 - `PUT /dealer/api/v1/Addresses/{id} `
 
 - `DELETE /dealer/api/v1/Addresses/{id}`
+
+#### Card
+- `GET /dealer/api/v1/Cards `
+- `GET /dealer/api/v1/Cards/{id} `
+- `GET /dealer/api/v1/Cards/ByUserId/{Userid} `
+- `GET /dealer/api/v1/Cards/ByAccountId/{accountid} `
+- `POST /dealer/api/v1/Cards `
+- `PUT /dealer/api/v1/Cards/{id} `
+- `DELETE /dealer/api/v1/Cards/{id} `
+
+
+#### Order
+
+
+- `GET /dealer/api/v1/Orders`
+- `GET /dealer/api/v1/Orders/GetOrderReportsQuery`
+- `GET /dealer/api/v1/Orders/{id}`
+- `GET /dealer/api/v1/Orders/ByUserId/{Userid}`
+- `POST /dealer/api/v1/Orders`
+- `PUT /dealer/api/v1/Orders/UpdateOrderStatus/{id}`
+- `PUT /dealer/api/v1/Orders/UpdateOrderByDealer/{id}`
+- `PUT /dealer/api/v1/Orders/{id}`
+- `DELETE /dealer/api/v1/Orders/{id}`
+
+#### Product
+
+
+- `GET /dealer/api/v1/Products`
+- `GET /dealer/api/v1/Products/{id}`
+- `GET /dealer/api/v1/Products/ByUserId/{Userid}`
+- `POST /dealer/api/v1/Products`
+- `PUT /dealer/api/v1/Products/{id}`
+- `GET /dealer/api/v1/Products/GetProductStockReportQuery`
+- `DELETE /dealer/api/v1/Products/{id}`
+- `GET /dealer/api/v1/Products/GetProductsStockStatus`
+
+
+#### Token
+
+- `POST /dealer/api/v1/Token`
+- `GET /dealer/api/v1/Token/Test`
+
+
+#### User
+- `GET /dealer/api/v1/Users `
+-  `GET /dealer/api/v1/Users/{id} `
+- ` POST /dealer/api/v1/Users `
+- ` PUT /dealer/api/v1/Users/{id} `
+- ` DELETE /dealer/api/v1/Users/{id} `
+
+## Author
+
+- Aylin Yıldız
+
+
+
