@@ -23,7 +23,8 @@ namespace Operation.Query
          IRequestHandler<GetAllOrderQuery, ApiResponse<List<OrderResponse>>>,
     IRequestHandler<GetOrderByIdQuery, ApiResponse<OrderResponse>>,
     IRequestHandler<GetOrderByUserIdQuery, ApiResponse<List<OrderResponse>>>,
-    IRequestHandler<GetOrderReportsQuery, ApiResponse<List<LowStock>>>
+    IRequestHandler<GetOrderReportsQuery, ApiResponse<List<LowStock>>>,
+    IRequestHandler<GetOrderReportByUserIdQuery, ApiResponse<OrderResponse>>
     {
         private readonly DealerDbContext dbContext;
         private readonly IMapper mapper;
@@ -92,6 +93,14 @@ namespace Operation.Query
             }
         }
 
-        
+        public async Task<ApiResponse<OrderResponse>> Handle(GetOrderReportByUserIdQuery request, CancellationToken cancellationToken)
+        {
+            IEnumerable<OrderResponse> orders = new List<OrderResponse>();
+            using (var con = dapperContext.GetOpenConnection())
+            {
+                orders = await con.QueryAsync<OrderResponse>($"SELECT * FROM dbo.GetOrderReports({request.Id})");
+                return new ApiResponse<OrderResponse>((OrderResponse)orders);
+            }
+        }
     }
 }
