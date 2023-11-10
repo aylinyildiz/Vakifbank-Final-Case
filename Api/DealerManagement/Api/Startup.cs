@@ -50,6 +50,8 @@ namespace Api
 
             services.AddControllers().AddFluentValidation();
 
+            services.AddScoped<IDapperContext, DapperContext>();
+
             services.AddMemoryCache();
 
             services.AddCors(options =>

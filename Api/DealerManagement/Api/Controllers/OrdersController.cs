@@ -32,6 +32,15 @@ namespace Api.Controllers
             return result;
         }
 
+        [HttpGet("GetOrderReportsQuery")]
+        [Authorize(Roles = "Dealer")]
+        public async Task<ApiResponse<List<LowStock>>> GetOrderReportsQuery()
+        {
+            var operation = new GetOrderReportsQuery();
+            var result = await mediator.Send(operation);
+            return result;
+        }
+
         [HttpGet("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<ApiResponse<OrderResponse>> Get(int id)

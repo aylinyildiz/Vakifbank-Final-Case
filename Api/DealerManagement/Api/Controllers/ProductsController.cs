@@ -66,6 +66,14 @@ namespace Api.Controllers
             var result = await mediator.Send(operation);
             return result;
         }
+        [HttpGet("GetProductStockReportQuery")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ApiResponse<List<LowStock>>> GetProductStockReport()
+        {
+            var operation = new GetProductStockReportQuery();
+            var result = await mediator.Send(operation);
+            return result;
+        }
 
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
